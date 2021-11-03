@@ -57,3 +57,9 @@ docker run -d --name react-app react-image
 ```bash
 docker ps
 ```
+#### important with PORT 3000
+
+```bash
+docker run -d p 3000:3000 --name react-app react-image
+
+```
