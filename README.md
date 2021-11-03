@@ -26,16 +26,33 @@ npm run start
 4. Finally, open the index.html file in your browser to see the results showing up.
 
 
-## Build docker image
+#### Build docker image
 
-` docker build .`
+```bash
+docker build .
+```
 
-## Delete no name image ... last image
+#### Delete no name image ... last image
 
-`docker image rm 879hrr3457kkia423`
+```bash
+docker image rm 879hrr3457kkia423
+```
 
-## Create New One with name react-image
+#### Create New One with name react-image
 
-`docker build -t react-image .`
+```bash
+docker build -t react-image .
 
-## done
+```
+
+#### Create first container
+
+```bash
+docker run -d --name react-app react-image
+```
+
+#### docker containers
+
+```bash
+docker ps
+```
