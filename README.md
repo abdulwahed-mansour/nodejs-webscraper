@@ -24,3 +24,18 @@ npm run start
 3. Open [http://localhost:8001/results](http://localhost:8001/results) with your browser to see the results of the scrape in your terminal.
 
 4. Finally, open the index.html file in your browser to see the results showing up.
+
+
+## Build docker image
+
+` docker build .`
+
+## Delete no name image ... last image
+
+`docker image rm 879hrr3457kkia423`
+
+## Create New One with name react-image
+
+`docker build -t react-image .`
+
+## done
