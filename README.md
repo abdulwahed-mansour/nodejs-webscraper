@@ -90,10 +90,8 @@ docker run -e CHOKIDAR_USEPOLLING=true -v ${PWD}/src/:/app/src -d p 3000:3000 --
 docker run -e CHOKIDAR_USEPOLLING=true -v $(pwd)/src:/app/src -d p 3000:3000 --name react-app react-image
 
 ```
-##### Read only container we add :ro
+##### Read only container we add (src/:/app/src:ro)
 
 ```bash
-src/:/app/src:ro
-
 docker run -e CHOKIDAR_USEPOLLING=true -v ${PWD}/src/:/app/src:ro -d p 3000:3000 --name react-app react-image
 ```
