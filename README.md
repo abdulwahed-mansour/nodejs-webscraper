@@ -57,9 +57,41 @@ docker run -d --name react-app react-image
 ```bash
 docker ps
 ```
+
+#### Kill last container
+```bash
+docker rm react-app -f
+```
+
 #### important with PORT 3000
 
 ```bash
 docker run -d p 3000:3000 --name react-app react-image
 
+```
+## Mounting a docker volume for powershell windows
+### Mount current directory as a volume in Docker on Windows 10
+
+##### In Windows Command Line (cmd), you can mount the current directory like so:
+
+```bash
+docker run -e CHOKIDAR_USEPOLLING=true -v %cd%\src:/app/src -d p 3000:3000 --name react-app react-imag
+
+```
+
+##### In PowerShell, you use ${PWD}, which gives you the current directory:
+
+```bash
+docker run -e CHOKIDAR_USEPOLLING=true -v ${PWD}/src/:/app/src -d p 3000:3000 --name react-app react-image
+```
+##### On Linux:
+
+```bash
+docker run -e CHOKIDAR_USEPOLLING=true -v $(pwd)/src:/app/src -d p 3000:3000 --name react-app react-image
+
+```
+
+
+```bash
+testiIIIIIIIIII
 ```
